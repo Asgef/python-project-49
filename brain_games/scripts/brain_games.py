@@ -1,5 +1,7 @@
+#!/uer/bin/env python3
+
 def main():
-    print('''poetry run puthon -m brain_games.script.brain_games
+    print('''poetry run python -m brain_games.script.brain_games
 Welcome to the Brain Games!''')
 
 
