@@ -12,3 +12,6 @@ install:
 
 start:
 	brain-games
+
+lint:
+	poetry run flake8 brain_games
