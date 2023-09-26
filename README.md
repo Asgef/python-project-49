@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/37841a9ac18f02fa38d3/maintainability)](https://codeclimate.com/github/Asgef/python-project-49/maintainability)
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/37841a9ac18f02fa38d3/test_coverage)](https://codeclimate.com/github/Asgef/python-project-49/test_coverage)
+
+[![asciicast](https://asciinema.org/a/jobYKaRqmmtC6MngRJxn4E8vR.svg)](https://asciinema.org/a/jobYKaRqmmtC6MngRJxn4E8vR)
