@@ -10,6 +10,9 @@ package-install:
 package-reinstall:
 	python -m pip install --user dist/*.whl --force-reinstall
 
+package-uninstall:
+	python3 -m pip uninstall hexlet-code
+
 install:
 	poetry install
 
