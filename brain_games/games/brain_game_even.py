@@ -30,4 +30,3 @@ def invert_answer(answer):
         return "'yes'"
     else:
         return "'yes' or 'no'"
-

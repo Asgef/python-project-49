@@ -22,4 +22,3 @@ def game_main(show_rules, issue_a_question, request_response, process_data):
             )
             return 0
         print(f'Congratulations, {user_name}!')
-

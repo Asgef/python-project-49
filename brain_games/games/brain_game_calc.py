@@ -31,4 +31,3 @@ def process_data_calc(question, answer):
         return True, elem,
     else:
         return False, f" was '{elem}'",
-
