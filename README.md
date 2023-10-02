@@ -10,3 +10,6 @@
 
 ### Gameplay for 'brain-calc'
 [![asciicast](https://asciinema.org/a/GfzD8aQoJnEhcSMBK9vQABYE1.svg)](https://asciinema.org/a/GfzD8aQoJnEhcSMBK9vQABYE1)
+
+### Gameplay for 'brain-gcd'
+[![asciicast](https://asciinema.org/a/kZzUP66qaYzfAS3Axs5vjdjTf.svg)](https://asciinema.org/a/kZzUP66qaYzfAS3Axs5vjdjTf)
