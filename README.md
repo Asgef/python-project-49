@@ -13,3 +13,6 @@
 
 ### Gameplay for 'brain-gcd'
 [![asciicast](https://asciinema.org/a/kZzUP66qaYzfAS3Axs5vjdjTf.svg)](https://asciinema.org/a/kZzUP66qaYzfAS3Axs5vjdjTf)
+
+### Gameplay for 'brain-progression'
+[![asciicast](https://asciinema.org/a/mB5PElHqBExxOYGXXzkK8YLv7.svg)](https://asciinema.org/a/mB5PElHqBExxOYGXXzkK8YLv7)
