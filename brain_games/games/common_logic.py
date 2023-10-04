@@ -21,4 +21,4 @@ def game_main(show_rules, issue_a_question, request_response, process_data):
                 f"\nLet's try again, {user_name}!!!"
             )
             return 0
-        print(f'Congratulations, {user_name}!')
+    print(f'Congratulations, {user_name}!')
