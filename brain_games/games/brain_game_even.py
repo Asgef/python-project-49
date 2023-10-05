@@ -1,7 +1,7 @@
 import random
 import prompt
 
-show_rules = 'Answer "yes" if the is even, otherwise answer "no".'
+show_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def ask_question_even():
