@@ -11,9 +11,9 @@
 This project was created as part of the "Python Developer" course on the Hexlet educational platform. It consists of five mini-games for the command line.
 
 ### Requirements
-Python 3.11 or higher
-pip 20 or higher
-git 2.25 or higher
+Python 3.11 or higher  
+pip 20 or higher  
+git 2.25 or higher  
 
 ### Installation
     
