@@ -1,1 +1,6 @@
 .venv/
+dist/
+*.whl
+*.gz
+*.pyc
+__pycache__
