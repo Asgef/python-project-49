@@ -1,6 +1,8 @@
 import random
+from brain_games.games.brain_game_calc import request_response_calc
+from brain_games.engine import game_main
 
-show_rules = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
 def generate_progression():
@@ -12,7 +14,6 @@ def generate_progression():
 
     # random difference between terms of an arithmetic progression
     d = random.randint(1, 10)
-
     progression = [a + d * i for i in range(n)]
     return progression
 
@@ -34,3 +35,10 @@ def process_data_progression(question, answer):
         return True, 0,
     else:
         return False, f"was '{question}'"
+
+
+def game_progression():
+    return game_main(
+        RULE, ask_question_progression,
+        request_response_calc, process_data_progression
+    )

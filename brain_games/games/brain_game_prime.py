@@ -1,6 +1,10 @@
-from .brain_game_even import invert_answer
+from brain_games.games.brain_game_even import (
+    invert_answer, request_response_even, ask_question_even
+)
+from brain_games.engine import game_main
 
-show_rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -22,3 +26,10 @@ def process_data_prime(question, answer):
         return True, 0,
     else:
         return False, invert_answer(answer)
+
+
+def game_prime():
+    return game_main(
+        RULE, ask_question_even,
+        request_response_even, process_data_prime
+    )

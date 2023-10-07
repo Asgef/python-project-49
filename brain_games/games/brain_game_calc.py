@@ -1,8 +1,9 @@
 import random
 import operator
 import prompt
+from brain_games.engine import game_main
 
-show_rules = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 
 
 def request_response_calc():
@@ -31,3 +32,10 @@ def process_data_calc(question, answer):
         return True, elem,
     else:
         return False, f" was '{elem}'",
+
+
+def game_calc():
+    return game_main(
+        RULE, ask_question_calc,
+        request_response_calc, process_data_calc
+    )

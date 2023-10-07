@@ -1,12 +1,14 @@
 from brain_games import cli
 
 
-def game_main(show_rules, issue_a_question, request_response, process_data):
+NUM_ROUNDS = 3
+
+
+def game_main(rule, issue_a_question, request_response, process_data):
     user_name = cli.welcome_user()
-    print(show_rules)
+    print(rule)
     count = 0
-    number_repetitions = 3
-    while count < number_repetitions:
+    while count < NUM_ROUNDS:
         question = issue_a_question()
         answer = request_response()
         processed_response = process_data(question, answer)

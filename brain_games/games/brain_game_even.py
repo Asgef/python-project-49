@@ -1,7 +1,8 @@
 import random
 import prompt
+from brain_games.engine import game_main
 
-show_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def ask_question_even():
@@ -30,3 +31,10 @@ def invert_answer(answer):
         return "'yes'"
     else:
         return "'yes' or 'no'"
+
+
+def game_even():
+    return game_main(
+        RULE, ask_question_even,
+        request_response_even, process_data_even
+    )

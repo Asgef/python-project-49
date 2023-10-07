@@ -1,6 +1,8 @@
 import random
+from brain_games.games.brain_game_calc import request_response_calc
+from brain_games.engine import game_main
 
-show_rules = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def ask_question_gcd():
@@ -21,3 +23,10 @@ def process_data_gcd(question, answer):
         return True, gcd,
     else:
         return False, f'was {gcd}',
+
+
+def game_gcd():
+    return game_main(
+        RULE, ask_question_gcd,
+        request_response_calc, process_data_gcd
+    )
