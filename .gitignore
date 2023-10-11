@@ -4,3 +4,4 @@ dist/
 *.gz
 *.pyc
 __pycache__
+.idea/
