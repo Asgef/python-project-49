@@ -1,40 +1,20 @@
 import random
-import prompt
-from brain_games.engine import game_main
 
 RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def ask_question_even():
+def ask_question(process_data_func):
     number = random.randint(1, 100)
-    print(f'Question: {number}')
-    return number
-
-
-def request_response_even():
-    return prompt.string('Your answer: ')
-
-
-def process_data_even(question, answer):
-    if question % 2 == 0 and answer == 'yes':
-        return True, 'yes',
-    elif question % 2 != 0 and answer == 'no':
-        return True, 'no',
+    if process_data_func(number):
+        correct_answer = 'yes'
     else:
-        return False, invert_answer(answer)
+        correct_answer = 'no'
+
+    return number, correct_answer
 
 
-def invert_answer(answer):
-    if answer == 'yes':
-        return "'no'"
-    elif answer == 'no':
-        return "'yes'"
+def process_data(number):
+    if number % 2 == 0:
+        return True
     else:
-        return "'yes' or 'no'"
-
-
-def game_even():
-    return game_main(
-        RULE, ask_question_even,
-        request_response_even, process_data_even
-    )
+        return False

@@ -1,32 +1,20 @@
 import random
-from brain_games.games.brain_game_calc import request_response_calc
-from brain_games.engine import game_main
+
 
 RULE = 'Find the greatest common divisor of given numbers.'
 
 
-def ask_question_gcd():
+def ask_question(process_data_func):
     number_1 = random.randint(1, 100)
     number_2 = random.randint(1, 100)
-    question = f'Question: {number_1} {number_2}'
-    print(question)
-    return number_1, number_2,
+    expression = f'{number_1} {number_2}'
+    correct_answer = process_data_func(number_1, number_2)
+    return expression, str(correct_answer)
 
 
-def process_data_gcd(question, answer):
-    a = question[0]
-    b = question[1]
+def process_data(number_1, number_2):
+    a = number_1
+    b = number_2
     while b:
         a, b = b, a % b
-    gcd = a
-    if gcd == answer:
-        return True, gcd,
-    else:
-        return False, f'was {gcd}',
-
-
-def game_gcd():
-    return game_main(
-        RULE, ask_question_gcd,
-        request_response_calc, process_data_gcd
-    )
+    return a
