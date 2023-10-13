@@ -38,24 +38,24 @@ git 2.25 or higher
 ### Gameplay for 'brain-even'
 
     brain-even
-[![asciicast](https://asciinema.org/a/TyVVqQDlyqhzYlulyXi0IOi9i.svg)](https://asciinema.org/a/TyVVqQDlyqhzYlulyXi0IOi9i)
+[![asciicast](https://asciinema.org/a/Y79rybiGvglPKsFxNmrdBTOr5.svg)](https://asciinema.org/a/Y79rybiGvglPKsFxNmrdBTOr5)
 
 ### Gameplay for 'brain-calc'
 
     brain-calc
-[![asciicast](https://asciinema.org/a/HzU73R95DhpUALSwXud9AyywG.svg)](https://asciinema.org/a/HzU73R95DhpUALSwXud9AyywG)
+[![asciicast](https://asciinema.org/a/gbg2f0RaTaU16b4sZAeFrdCBB.svg)](https://asciinema.org/a/gbg2f0RaTaU16b4sZAeFrdCBB)
 
 ### Gameplay for 'brain-gcd'
 
     brain-gcd
-[![asciicast](https://asciinema.org/a/Oao68ssVWFRwsupptqIF4V8t1.svg)](https://asciinema.org/a/Oao68ssVWFRwsupptqIF4V8t1)
+[![asciicast](https://asciinema.org/a/EihLMy3Iormi6sUV2lj6iuZPJ.svg)](https://asciinema.org/a/EihLMy3Iormi6sUV2lj6iuZPJ)
 
 ### Gameplay for 'brain-progression'
 
     brain-progression
-[![asciicast](https://asciinema.org/a/RaUSrtVs7NidrTlPFnRE29H0w.svg)](https://asciinema.org/a/RaUSrtVs7NidrTlPFnRE29H0w)
+[![asciicast](https://asciinema.org/a/R57ev6vGbZ0TB2SbpA0SnqzmI.svg)](https://asciinema.org/a/R57ev6vGbZ0TB2SbpA0SnqzmI)
 
 ### Gameplay for 'brain-prime'
 
     brain-prime
-[![asciicast](https://asciinema.org/a/bqOlyJgSXC30GgNxEqj3dp1gv.svg)](https://asciinema.org/a/bqOlyJgSXC30GgNxEqj3dp1gv)
+[![asciicast](https://asciinema.org/a/NPpUNHH8Lo52oqXzbTqEnd8PG.svg)](https://asciinema.org/a/NPpUNHH8Lo52oqXzbTqEnd8PG)
