@@ -3,7 +3,17 @@ import random
 RULE = 'What number is missing in the progression?'
 
 
-def ask_question(process_data_func):
+def ask_question():
+    progression = generate_progression()
+    char = '..'
+    random_element_i = random.randint(1, 9)
+    correct_answer = progression[random_element_i]
+    progression[random_element_i] = char
+    question_str = ' '.join(map(str, progression))
+    return question_str, str(correct_answer)
+
+
+def generate_progression():
     # number of terms of an arithmetic progression
     n = 10
 
@@ -13,13 +23,4 @@ def ask_question(process_data_func):
     # random difference between terms of an arithmetic progression
     d = random.randint(1, 10)
     progression = [a + d * i for i in range(n)]
-    char = '..'
-    random_element_i = random.randint(1, 9)
-    correct_answer = process_data_func(progression, random_element_i)
-    progression[random_element_i] = char
-    question_str = ' '.join(map(str, progression))
-    return question_str, str(correct_answer)
-
-
-def process_data(progression, random_element_i):
-    return progression[random_element_i]
+    return progression

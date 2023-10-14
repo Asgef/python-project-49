@@ -4,17 +4,17 @@ import operator
 RULE = 'What is the result of the expression?'
 
 
-def ask_question(process_data_func):
+def ask_question():
     number_1 = random.randint(1, 100)
     number_2 = random.randint(1, 100)
     operators = ['+', '-', '*']
     expression_operator = random.choice(operators)
     expression = f'{number_1} {expression_operator} {number_2}'
-    correct_answer = process_data_func(number_1, number_2, expression_operator)
+    correct_answer = calculate_expression(number_1, number_2, expression_operator)
     return expression, str(correct_answer)
 
 
-def process_data(number_1, number_2, expression_operator):
+def calculate_expression(number_1, number_2, expression_operator):
     get_operator = {
         '+': operator.add,
         '-': operator.sub,
