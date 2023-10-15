@@ -10,11 +10,11 @@ def ask_question():
     operators = ['+', '-', '*']
     expression_operator = random.choice(operators)
     expression = f'{number_1} {expression_operator} {number_2}'
-    correct_answer = calculate_expression(number_1, number_2, expression_operator)
+    correct_answer = calc_expression(number_1, number_2, expression_operator)
     return expression, str(correct_answer)
 
 
-def calculate_expression(number_1, number_2, expression_operator):
+def calc_expression(number_1, number_2, expression_operator):
     get_operator = {
         '+': operator.add,
         '-': operator.sub,
