@@ -4,12 +4,12 @@ RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def ask_question():
-    number = random.randint(1, 100)
-    if is_even(number):
-        correct_answer = 'yes'
+    num = random.randint(1, 100)
+    if is_even(num) is True:
+        answer = 'yes'
     else:
-        correct_answer = 'no'
-    return number, correct_answer
+        answer = 'no'
+    return num, answer
 
 
 def is_even(number):

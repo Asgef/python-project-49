@@ -21,6 +21,3 @@ def is_prime(number):
             return False
         i += 1
     return True
-
-
-
