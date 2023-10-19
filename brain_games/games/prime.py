@@ -2,9 +2,12 @@ import random
 
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+MIN_VALUE = 1
+MAX_VALUE = 100
 
-def ask_question():
-    number = random.randint(1, 100)
+
+def get_question_answer():
+    number = random.randint(MIN_VALUE, MAX_VALUE)
     if is_prime(number):
         correct_answer = 'yes'
     else:
@@ -15,9 +18,9 @@ def ask_question():
 def is_prime(number):
     if number < 4:
         return True
-    i = 2
-    while i <= number / 2:
-        if number % i == 0:
+    divisor = 2
+    while divisor <= number / 2:
+        if number % divisor == 0:
             return False
-        i += 1
+        divisor += 1
     return True

@@ -2,10 +2,13 @@ import random
 
 RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+MIN_VALUE = 1
+MAX_VALUE = 100
 
-def ask_question():
-    num = random.randint(1, 100)
-    if is_even(num) is True:
+
+def get_question_answer():
+    num = random.randint(MIN_VALUE, MAX_VALUE)
+    if is_even(num):
         answer = 'yes'
     else:
         answer = 'no'
@@ -13,7 +16,4 @@ def ask_question():
 
 
 def is_even(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+    return number % 2 == 0

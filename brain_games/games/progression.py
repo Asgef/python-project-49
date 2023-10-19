@@ -2,25 +2,31 @@ import random
 
 RULE = 'What number is missing in the progression?'
 
+MUN_TERMS = 10
+MIN_FIRST_ELEMENT = 1
+MAX_FIRST_ELEMENT = 20
+MIN_DIFFERENCE = 1
+MAX_DIFFERENCE = 10
+MIN_RANDOM_INDEX = 1
+MAX_RANDOM_INDEX = 9
 
-def ask_question():
-    # number of terms of an arithmetic progression
-    n = 10
 
-    # random first element of an arithmetic progression
-    a = random.randint(1, 20)
+def get_question_answer():
+    n_term_sequence = MUN_TERMS
+    init_term = random.randint(MIN_FIRST_ELEMENT, MAX_FIRST_ELEMENT)
+    diff_members = random.randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
 
-    # random difference between terms of an arithmetic progression
-    d = random.randint(1, 10)
-    progression = generate_progression(n, a, d)
+    progression = gen_progression(n_term_sequence, init_term, diff_members)
+
     char = '..'
-    random_element_i = random.randint(1, 9)
-    correct_answer = progression[random_element_i]
-    progression[random_element_i] = char
+    rand_element_i = random.randint(MIN_RANDOM_INDEX, MAX_RANDOM_INDEX)
+    correct_answer = progression[rand_element_i]
+
+    progression[rand_element_i] = char
     question_str = ' '.join(map(str, progression))
+
     return question_str, str(correct_answer)
 
 
-def generate_progression(n, a, d):
-    progression = [a + d * i for i in range(n)]
-    return progression
+def gen_progression(n_term_sequence, init_term, diff_members):
+    return [init_term + diff_members * item for item in range(n_term_sequence)]

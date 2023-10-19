@@ -3,10 +3,13 @@ import operator
 
 RULE = 'What is the result of the expression?'
 
+MIN_VALUE = 1
+MAX_VALUE = 100
 
-def ask_question():
-    number_1 = random.randint(1, 100)
-    number_2 = random.randint(1, 100)
+
+def get_question_answer():
+    number_1 = random.randint(MIN_VALUE, MAX_VALUE)
+    number_2 = random.randint(MIN_VALUE, MAX_VALUE)
     operators = ['+', '-', '*']
     expression_operator = random.choice(operators)
     expression = f'{number_1} {expression_operator} {number_2}'

@@ -4,12 +4,12 @@ import prompt
 NUM_ROUNDS = 3
 
 
-def game_main(game):
+def launch_game(game):
     user_name = cli.welcome_user()
     print(game.RULE)
     count = 0
     while count < NUM_ROUNDS:
-        question, correct_answer = game.ask_question()
+        question, correct_answer = game.get_question_answer()
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if correct_answer == answer:
