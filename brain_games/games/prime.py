@@ -2,12 +2,12 @@ import random
 
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-MIN_VALUE = 1
-MAX_VALUE = 100
+PRIME_MIN_BOUND = 1
+PRIME_Max_BOUND = 100
 
 
 def get_question_answer():
-    number = random.randint(MIN_VALUE, MAX_VALUE)
+    number = random.randint(PRIME_MIN_BOUND, PRIME_Max_BOUND)
     if is_prime(number):
         correct_answer = 'yes'
     else:
