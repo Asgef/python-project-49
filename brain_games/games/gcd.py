@@ -2,13 +2,13 @@ import random
 
 RULE = 'Find the greatest common divisor of given numbers.'
 
-MIN_VALUE = 1
-MAX_VALUE = 100
+GCD_MIN_NUM = 1
+GCD_MAX_NUM = 100
 
 
 def get_question_answer():
-    number_1 = random.randint(MIN_VALUE, MAX_VALUE)
-    number_2 = random.randint(MIN_VALUE, MAX_VALUE)
+    number_1 = random.randint(GCD_MIN_NUM, GCD_MAX_NUM)
+    number_2 = random.randint(GCD_MIN_NUM, GCD_MAX_NUM)
     expression = f'{number_1} {number_2}'
     correct_answer = find_gcd(number_1, number_2)
     return expression, str(correct_answer)
